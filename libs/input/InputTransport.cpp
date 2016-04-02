@@ -19,7 +19,6 @@
 // Log debug messages about touch event resampling
 // #define DEBUG_RESAMPLING 0
 
-
 #include <errno.h>
 #include <fcntl.h>
 #include <inttypes.h>

@@ -85,6 +85,7 @@ cc_defaults {
 cc_defaults {
     name: "egl_libs_defaults",
     defaults: ["gl_libs_defaults"],
+    sdclang: false,
     cflags: [
         "-DLOG_TAG=\"libEGL\"",
     ],
@@ -175,6 +176,7 @@ cc_defaults {
 cc_library_shared {
     name: "libGLESv1_CM",
     defaults: ["gles_libs_defaults"],
+    sdclang: false,
     srcs: ["GLES_CM/gl.cpp"],
     cflags: ["-DLOG_TAG=\"libGLESv1\""],
 }
@@ -185,6 +187,7 @@ cc_library_shared {
 cc_library_shared {
     name: "libGLESv2",
     defaults: ["gles_libs_defaults"],
+    sdclang: false,
     srcs: ["GLES2/gl2.cpp"],
     cflags: ["-DLOG_TAG=\"libGLESv2\""],
 }
@@ -195,6 +198,7 @@ cc_library_shared {
 cc_library_shared {
     name: "libGLESv3",
     defaults: ["gles_libs_defaults"],
+    sdclang: false,
     srcs: ["GLES2/gl2.cpp"],
     cflags: ["-DLOG_TAG=\"libGLESv3\""],
 }

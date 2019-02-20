@@ -44,6 +44,8 @@ cc_library_shared {
 
         // Don't warn about struct padding
         "-Wno-padded",
+
+        "-Wno-tautological-type-limit-compare",
     ],
 
     product_variables: {
